@@ -20,16 +20,16 @@ body{
   letter-spacing: 5px;
 }
 
-.days, .hours, .minutes, .seconds {
+ .hours, .minutes, .seconds {
   display: inline-block;
   padding: 20px;
   width: 100px;
   border-radius: 5px;
 }
 
-.days {
+/* .days {
   background: #EF2F3C;
-}
+} */
 
 .hours {
   background: #eeeeee;
@@ -60,7 +60,7 @@ body{
   top: 2%;
 }
 
-.red {
+/* .red {
   position: absolute;
   background:  #EF2F3C;
   left: 18%;
@@ -68,7 +68,7 @@ body{
   height: 65px;
   width: 70px;
  
-}
+} */
 
 .blue {
   position: absolute;
@@ -122,7 +122,7 @@ let timer = setInterval(function() {
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
-  document.getElementById("days").innerHTML=days
+  // document.getElementById("days").innerHTML=days
   document.getElementById("hours").innerHTML=hours
   document.getElementById("minutes").innerHTML=minutes
   document.getElementById("seconds").innerHTML=seconds
